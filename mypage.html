@@ -6,19 +6,20 @@
     <title>mypage</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Encabezado -->
     <header>
-        <h1>Bienvenido a mi página de presentación</h1>
+        <h1>Bienvenidos a mi página</h1>
     </header>
 
     <!-- Contenido -->
     <div class="container">
         <img src="images/IMG-20250408-WA0074.jpg" alt="Imagen de perfil" class="profile-image">
         <h2>Hola, soy Mila</h2>
-        <p>¡Encantado de conocerte! Soy un apasionado de la tecnología, desarrollo web y todo lo relacionado con la creación de proyectos digitales. Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo y diseño web.</p>
+        <p>¡Encantado de conocerte! Soy una apasionada de la tecnología, desarrollo web y todo lo relacionado con la creación de proyectos digitales. Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo y diseño web.</p>
         <p>En esta página podrás encontrar un resumen de mi trabajo, mis habilidades y proyectos. Espero que disfrutes de la visita y no dudes en contactarme si tienes alguna pregunta.</p>
     </div>
     
@@ -46,29 +47,28 @@
                 <p>React</p>
             </div>
         </div>
-    </section>
-
-    <div class="contact-section">
-        <button onclick="mostrarContacto()">Contáctame</button>
-        <div id="datosContacto" class="hidden">
-            <p><strong>Email:</strong> milaaguirre293@gmail.com</p>
-            <p><strong>WhatsApp:</strong> +51 987 654 321</p>
-            <p><strong>Instagram:</strong> @mila9723</p>
+        <div class="contact-section">
+            <button onclick="mostrarContacto()">Contáctame</button>
+            <div id="datosContacto" class="contact-box">
+                <span class="close-btn" onclick="cerrarContacto()">✖</span>
+                <h3>Datos de contacto</h3>
+                <p><i class="fas fa-envelope"></i> milaaguirre293@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +51 987 654 321</p>
+                <p><i class="fab fa-instagram"></i> @mila9723</p>
+            </div>
         </div>
-    </div>
+    </section>
 
     <script>
         function mostrarContacto() {
-            const datos = document.getElementById("datosContacto");
-            if (datos.style.display === "none" || datos.style.display === "") {
-                datos.style.display = "block";
-            } else {
-                datos.style.display = "none";
-            }
+            document.getElementById("datosContacto").classList.add("visible");
+        }
+    
+        function cerrarContacto() {
+            document.getElementById("datosContacto").classList.remove("visible");
         }
     </script>
-
-
+    
     <!-- Pie de página -->
     <div class="footer">
         <p>&copy; 2025 mmila. Todos los derechos reservados.</p>
