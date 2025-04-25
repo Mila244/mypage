@@ -47,14 +47,32 @@
                 <p>React</p>
             </div>
         </div>
+        
         <div class="contact-section">
             <button onclick="mostrarContacto()">Contáctame</button>
             <div id="datosContacto" class="contact-box">
                 <span class="close-btn" onclick="cerrarContacto()">✖</span>
                 <h3>Datos de contacto</h3>
-                <p><i class="fas fa-envelope"></i> milaaguirre293@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> +51 987 654 321</p>
-                <p><i class="fab fa-instagram"></i> @mila9723</p>
+                
+                <!-- Tabla de contacto -->
+                <table>
+                    <tr>
+                        <th>Información</th>
+                        <th>Detalle</th>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td>milaaguirre293@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-whatsapp"></i> </td>
+                        <td>+51 987 654 321</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fab fa-instagram"></i></td>
+                        <td>@mila9723</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </section>
@@ -68,7 +86,7 @@
             document.getElementById("datosContacto").classList.remove("visible");
         }
     </script>
-    
+
     <!-- Pie de página -->
     <div class="footer">
         <p>&copy; 2025 mmila. Todos los derechos reservados.</p>
