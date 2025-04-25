@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mypage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -20,6 +21,53 @@
         <p>¡Encantado de conocerte! Soy un apasionado de la tecnología, desarrollo web y todo lo relacionado con la creación de proyectos digitales. Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo y diseño web.</p>
         <p>En esta página podrás encontrar un resumen de mi trabajo, mis habilidades y proyectos. Espero que disfrutes de la visita y no dudes en contactarme si tienes alguna pregunta.</p>
     </div>
+    
+    <section class="experience">
+        <h2>Experiencia</h2>
+        <div class="icons-container">
+            <div class="icon-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="icon-card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="icon-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="icon-card">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div class="icon-card">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <button onclick="mostrarContacto()">Contáctame</button>
+        <div id="datosContacto" class="hidden">
+            <p><strong>Email:</strong> milaaguirre293@gmail.com</p>
+            <p><strong>WhatsApp:</strong> +51 987 654 321</p>
+            <p><strong>Instagram:</strong> @mila9723</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarContacto() {
+            const datos = document.getElementById("datosContacto");
+            if (datos.style.display === "none" || datos.style.display === "") {
+                datos.style.display = "block";
+            } else {
+                datos.style.display = "none";
+            }
+        }
+    </script>
+
 
     <!-- Pie de página -->
     <div class="footer">
